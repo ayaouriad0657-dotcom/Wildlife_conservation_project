@@ -35,7 +35,7 @@
                 <div class="card dashboard-card">
                     <div class="card-body">
                         <h5>Total Animals</h5>
-                        <h2>120</h2>
+                        <h2 id="totalAnimals">120</h2>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="card dashboard-card">
                     <div class="card-body">
                         <h5>Total Species</h5>
-                        <h2>35</h2>
+                        <h2 id="totalSpecies">35</h2>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 <div class="card dashboard-card">
                     <div class="card-body">
                         <h5>Wildlife Sightings</h5>
-                        <h2>80</h2>
+                        <h2 id="totalSightings">80</h2>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="card dashboard-card">
                     <div class="card-body">
                         <h5>Active Threats</h5>
-                        <h2>12</h2>
+                        <h2 id="totalThreats">12</h2>
                     </div>
                 </div>
             </div>
@@ -71,9 +71,9 @@
 
         <div class="mt-4 mb-5">
 
-            <button class="btn btn-success">Add Animal</button>
-            <button class="btn btn-success">Add Sighting</button>
-            <button class="btn btn-danger">Report Threat</button>
+            <a class="btn action-btn btn-success" href="animals.html">Add Animal</a>
+            <a class="btn action-btn btn-success" href="sightings.html">Add Sighting</a>
+            <a class="btn action-btn btn-danger" href="threats.html">Report Threat</a>
 
         </div>
 
@@ -93,7 +93,7 @@
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody id ="sightingsTable">
                     <tr>
                         <td>Elephant</td>
                         <td>Forest Zone</td>
@@ -117,7 +117,11 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
+    <script src="supabaseClient.js"></script>
+    <script src="indexScript.js"></script>
+    <!-- <script src="indexRanger.js"></script> -->
 </body>
 
 </html>

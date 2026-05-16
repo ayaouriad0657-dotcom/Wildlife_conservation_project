@@ -21,9 +21,11 @@
         <h3 class="mb-3">Animals Management</h3>
 
         <!-- FORM -->
-        <div class="card dashboard-card p-3 mb-4">
+        <div class="card dashboard-card p-3 mb-4" id="animalFormContainer">
 
             <form id="animalForm" class="row g-3">
+
+                <input type="hidden" id="animalId">
 
                 <div class="col-md-3">
                     <label class="form-label">Animal Name</label>
@@ -33,18 +35,14 @@
                 <div class="col-md-3">
                     <label class="form-label">Species</label>
                     <select class="form-control" id="species">
-                        <option>Elephant</option>
-                        <option>Tiger</option>
-                        <option>Leopard</option>
+                        <option value="">Select Species</option>
                     </select>
                 </div>
 
                 <div class="col-md-3">
                     <label class="form-label">Habitat</label>
                     <select class="form-control" id="habitat">
-                        <option>Forest</option>
-                        <option>Desert</option>
-                        <option>River Area</option>
+                        <option value="">Select Habitat</option>
                     </select>
                 </div>
 
@@ -57,10 +55,10 @@
                 </div>
 
                 <div class="col-12 mt-2">
-                    <button type="button" class="btn btn-success">Add</button>
-                    <button type="button" class="btn btn-primary">Update</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                    <button type="reset" class="btn btn-secondary">Clear</button>
+                    <button type="button" class="btn btn-success" onclick="addAnimal()">Add</button>
+                    <button type="button" class="btn btn-primary" onclick="updateAnimal()">Update</button>
+                    <button type="button" class="btn btn-danger" onclick="deleteAnimal()">Delete</button>
+                    <button type="reset" class="btn btn-secondary" onclick="clearForm()">Clear</button>
                 </div>
 
             </form>
@@ -81,7 +79,7 @@
                         <th>Species</th>
                         <th>Habitat</th>
                         <th>Gender</th>
-                        <th>Actions</th>
+                        
                     </tr>
                 </thead>
 
@@ -92,10 +90,8 @@
                         <td>Lion</td>
                         <td>Savannah</td>
                         <td>Male</td>
-                        <td>
-                            <button class="btn btn-sm btn-primary">Edit</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
-                        </td>
+                        
+                        
                     </tr>
                 </tbody>
 
@@ -107,7 +103,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script src="script.js"></script>
+<script src="supabaseClient.js"></script>
 <script src="animalsScript.js"></script>
+<!-- <script src="animalsRanger.js"></script> -->
 </body>
 
 </html>
