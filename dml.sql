@@ -7,7 +7,7 @@ INSERT INTO users(role_id, full_name, email, password)VALUES
 (2, 'Sarah Kimani', 'sarakimani@wildlife.org', 'sara432'),
 (2, 'Michael Brown', 'michaelbrown@wildlife.org', 'michael123'),
 (2, 'Kamil Otieno', 'kamilotieno@wildlife.org', 'kamil543'),
-(2, 'Camila rey', 'camilarey@wildlife.org', 'camila321'),
+(2, 'Camila rey', 'camilarey@wildlife.org', 'camila321');
 
 INSERT INTO rangers(user_id, experience_years)VALUES
 (2, 8),
