@@ -16,10 +16,10 @@ fetch("navbar.html")
     // ROLE LOGIC (ADD THIS)
     // const role = "ranger"; // later from login
 
-    if (role === "ranger") {
-      document.querySelectorAll(".admin-only").forEach(el => {
-        el.style.display = "none";
-      });
-    }
+    // if (role === "ranger") {
+    //   document.querySelectorAll(".admin-only").forEach(el => {
+    //     el.style.display = "none";
+    //   });
+    // }
 
   });
