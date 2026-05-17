@@ -1,4 +1,4 @@
-const supabaseClient = window.supabase;
+// const supabaseClient = window.supabase;
 
 async function loadThreats() {
 
@@ -20,8 +20,8 @@ async function loadThreats() {
             <tr>
                 <td>${t.threat_type}</td>
                 <td>${t.threat_level}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger"
+                <td class="action-column action-btn">
+                    <button class="btn btn-sm btn-danger action-btn"
                         onclick="deleteThreat(${t.threat_id})">
                         Delete
                     </button>
@@ -179,8 +179,8 @@ async function loadActivities() {
                 <td>${a.activity_name}</td>
                 <td>${a.status}</td>
                 <td>${name}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger"
+                <td class="action-column">
+                    <button class="btn btn-sm btn-danger action-btn"
                         onclick="deleteActivity(${a.activity_id})">
                         Delete
                     </button>
@@ -188,6 +188,7 @@ async function loadActivities() {
             </tr>
         `;
     }
+    applyRangerRules();
 }
 
 loadActivities();

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const role = "ranger"; // later from login
+    const role = localStorage.getItem("userRole");
 
     if (role === "ranger") {
 

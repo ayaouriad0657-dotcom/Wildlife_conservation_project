@@ -1,4 +1,4 @@
-const supabaseClient = window.supabase;
+
 
 // LOAD SIGHTINGS
 async function loadSightings() {
@@ -268,9 +268,9 @@ function clearSightingForm() {
 
     document.getElementById("sightingId").value = "";
 
-    document.getElementById("animal").value = "";
-    document.getElementById("habitat").value = "";
-    document.getElementById("ranger").value = "";
+    document.getElementById("animal").selectedIndex = 0;
+    document.getElementById("habitat").selectedIndex = 0;
+    document.getElementById("ranger").selectedIndex = 0;
 
     document.getElementById("sightingDate").value = "";
     document.getElementById("count").value = "";

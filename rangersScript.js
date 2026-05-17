@@ -1,4 +1,4 @@
-const supabaseClient = window.supabase;
+// const supabaseClient = window.supabase;
 
 // LOAD RANGERS
 async function loadRangers() {

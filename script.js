@@ -14,12 +14,18 @@ fetch("navbar.html")
     });
 
     // ROLE LOGIC (ADD THIS)
-    // const role = "ranger"; // later from login
+    const role = localStorage.getItem("userRole");
 
-    // if (role === "ranger") {
-    //   document.querySelectorAll(".admin-only").forEach(el => {
-    //     el.style.display = "none";
-    //   });
-    // }
+    if (role === "ranger") {
+      document.querySelectorAll(".admin-only").forEach(el => {
+        el.style.display = "none";
+      });
+    }
 
   });
+
+  async function logout() {
+    await supabaseClient.auth.signOut();
+    localStorage.removeItem("userRole");
+    window.location.href = "login.html";
+}

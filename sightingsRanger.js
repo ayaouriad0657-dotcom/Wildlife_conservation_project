@@ -1,6 +1,6 @@
 // function applyRangerRules() {
 
-    // const role = "ranger";
+    const role = localStorage.getItem("userRole");
 
     if (role === "ranger") {
 

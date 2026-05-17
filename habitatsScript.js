@@ -1,4 +1,4 @@
-const supabaseClient = window.supabase;
+// const supabaseClient = window.supabase;
 
 async function loadHabitats() {
 

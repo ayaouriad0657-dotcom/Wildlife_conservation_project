@@ -1,5 +1,5 @@
 // console.log("script running");
-const supabaseClient = window.supabase;
+
 
 
 // LOAD ANIMALS
